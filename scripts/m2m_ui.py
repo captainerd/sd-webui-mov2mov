@@ -364,7 +364,7 @@ def on_ui_tabs():
         "mov2mov", id=f"tab_{id_part}", elem_id=f"tab_{id_part}"
     ) as mov2mov_interface:
         toprow = Toprow(is_img2img=False, id_part=id_part)
-        dummy_component = gr.Label(visible=False)
+        dummy_component = gr.Textbox(label="Enter text")
         with gr.Tab(
             "Generation", id=f"{id_part}_generation"
         ) as mov2mov_generation_tab, ResizeHandleRow(equal_height=False):
